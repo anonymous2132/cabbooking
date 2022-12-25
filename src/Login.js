@@ -8,7 +8,7 @@ const Login = (props) => {
   return (
     <Background>
       <View style={{ alignItems: "center", width: 380 }}>
-        <Text
+        {/* <Text
           style={{
             color: "black",
             fontSize: 37,
@@ -18,14 +18,14 @@ const Login = (props) => {
           }}
         >
           Login
-        </Text>
+        </Text> */}
         <View style={{ alignItems: "center" }}>
-          <Text
+          {/* <Text
             style={{ fontSize: 40, fontWeight: "bold", color: "darkgreen" }}
           >
             Welocme Back
-          </Text>
-          <Text style={{ fontSize: 18 }}>Login to your account</Text>
+          </Text> */}
+          {/* <Text style={{ fontSize: 18 }}>Login to your account</Text> */}
           <View style={{ marginVertical: 290 }}>
             <Field placeholder="Email/Username" />
             <Field placeholder="Password" secureTextEntry={true} />
@@ -46,7 +46,7 @@ const Login = (props) => {
               </TouchableOpacity>
             </View>
             <TouchableOpacity
-              onPress={() => alert("Logged In.Happy and safe travelling.")}
+              onPress={() => props.navigation.navigate("Locationpermission")}
             >
               <Text
                 style={{

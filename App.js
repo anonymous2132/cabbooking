@@ -28,6 +28,10 @@ import Home from "./src/Home";
 import Login from "./src/Login";
 import Signup from "./src/Signup";
 import Forgotpass from "./src/Forgotpass";
+import Help from "./src/Help";
+import Locationpermission from "./src/Locationpermission";
+import Pickupscreen from "./src/Pickupscreen";
+import PhoneInput from "react-native-phone-number-input";
 
 // function HomeScreen() {
 //   return (
@@ -47,6 +51,12 @@ function App() {
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Forgotpass" component={Forgotpass} />
+        <Stack.Screen name="Help" component={Help} />
+        <Stack.Screen
+          name="Locationpermission"
+          component={Locationpermission}
+        />
+        <Stack.Screen name="Pickupscreen" component={Pickupscreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

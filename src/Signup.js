@@ -3,9 +3,12 @@ import React from "react";
 import Background from "./Background";
 import Field from "./Field";
 import { darkGreen } from "./constantants";
+import PhoneInput from "react-native-phone-number-input";
+// import Background2 from "./Background2";
 
 const Signup = (props) => {
   return (
+    // <Background2>
     <View style={{ alignItems: "center", width: 380 }}>
       <View style={{ alignItems: "center" }}>
         <Text
@@ -33,6 +36,7 @@ const Signup = (props) => {
         {/* <Text>Crete a new account.</Text> */}
         {/* <Text style={{ fontSize: 18 }}>Login to your account</Text> */}
         <View style={{ marginVertical: 40 }}>
+          <PhoneInput />
           <Field placeholder="Firstname" keyboardType={"email-address"} />
           <Field placeholder="Lastname" secureTextEntry={true} />
           <Field placeholder="Email/Username" keyboardType={"email-address"} />
@@ -60,7 +64,11 @@ const Signup = (props) => {
               </TouchableOpacity>
             </View> */}
           <TouchableOpacity
-            onPress={() => alert("Account created.Happy travelling.")}
+            onPress={() =>
+              alert(
+                "Account created. Happy travelling.   Now you can login with the details you provided."
+              )
+            }
             //   onPress={() => props.navigation.navigate("Login")}
           >
             <Text
@@ -105,6 +113,7 @@ const Signup = (props) => {
         </View>
       </View>
     </View>
+    // {/* </Background2> */}
   );
 };
 
